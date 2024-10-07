@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DBoost</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <h1>DBoost</h1>
+        <select id="proxySelect"></select>
+        <button id="applyProxy">Применить</button>
+        <button id="updateProxyList">Обновить список прокси</button>
+        <div id="updateStatus"></div>
+        <div id="customProxyList"></div>
+        <h2>Добавить свой прокси</h2>
+        <input type="text" id="customName" placeholder="Имя">
+        <input type="text" id="customHost" placeholder="Хост">
+        <input type="number" id="customPort" placeholder="Порт">
+        <select id="customType">
+            <option value="http">HTTP</option>
+            <option value="https">HTTPS</option>
+            <option value="socks4">SOCKS4</option>
+            <option value="socks5">SOCKS5</option>
+        </select>
+        <input type="text" id="customUsername"
+            placeholder="Имя пользователя (необязательно)">
+        <input type="password" id="customPassword"
+            placeholder="Пароль (необязательно)">
+        <button id="addCustomProxy">Добавить свой прокси</button>
+        <script src="js/popup.js"></script>
+    </body>
+</html>

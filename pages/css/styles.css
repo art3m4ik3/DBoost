@@ -1,0 +1,88 @@
+body {
+    width: 300px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1f;
+    color: #ffffff;
+}
+
+h1,
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+select,
+input,
+button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color: #ffffff;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+select:focus,
+input:focus,
+button:focus {
+    outline: none;
+}
+
+select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="white" d="M2 0L0 2h4z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px;
+    padding-right: 30px;
+}
+
+button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 30px;
+    transition: all 0.4s ease;
+    background-image: linear-gradient(to right, rgba(243, 61, 61, 1), rgba(255, 216, 108, 1));
+    background-size: 200%;
+    background-position: 0 0;
+}
+
+button:hover {
+    background-position: 100% 0;
+    transform: translateY(-2px);
+    box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.5);
+}
+
+#customProxyList div {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#customProxyList button {
+    width: auto;
+    margin-left: 5px;
+    font-size: 14px;
+    background-color: #555;
+    border: none;
+    border-radius: 3px;
+    transition: all 0.4s ease;
+}
+
+#updateStatus {
+    margin-top: 10px;
+    font-style: italic;
+    color: #ccc;
+}
